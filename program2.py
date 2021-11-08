@@ -1,3 +1,5 @@
+import math
+
 def ask_apple_orange():
     apple = int(input("How many apples do you want to buy? "))
     NumberOfApple_X_ApplePrice= apple*20
@@ -9,12 +11,10 @@ def ask_apple_orange():
     
     total_amount = NumberOfApple_X_ApplePrice + NumberOfOrange_X_OrangePrice
     return total_amount
+
 def display(total_amount):
     print(f"The total amount is ₱{total_amount}.")
 
 total_AMOUNT_ = ask_apple_orange()
 
 display(total_AMOUNT_)
-
-
-
