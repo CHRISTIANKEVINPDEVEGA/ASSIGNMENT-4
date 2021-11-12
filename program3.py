@@ -1,16 +1,15 @@
 import math
 
 def all_calculations():
-   amount_money = float(input("Enter the amount of money you have: ₱"))
-   apple_price = float(input("How much will you pay for an apple? ₱"))
+   _amount_money = float(input("Enter the amount of money you have: ₱"))
+   _apple_price = float(input("How much will you pay for an apple? ₱"))
+   return _amount_money, _apple_price
+
+def display(amount_money, apple_price):
    apple_stock = 10
    Calculation= amount_money - (apple_stock * apple_price)
-   return Calculation
+   print(f"You can buy {apple_stock} apples and your change is ₱{Calculation:.2f}.") 
 
+AMOUNT_MONEY, APPLE_PRICE = all_calculations()
 
-def display(calculation_):
-   print(f"You can buy 10 apples and your change is ₱{calculation_:.2f}.") 
-
-Calculation_ = all_calculations()
-
-display(Calculation_)
+display(AMOUNT_MONEY, APPLE_PRICE)
